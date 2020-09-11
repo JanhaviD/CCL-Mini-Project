@@ -45,7 +45,7 @@ if (isset($_POST['submit_user'])) {
 
 
 if(!empty($_POST['name'])&&!empty($_POST['mobile'])&&!empty($_POST['email'])&&!empty($_POST['details'])){
-  $query = "INSERT INTO contact_selling (name, mobile, email, details) 
+  $query = "INSERT INTO contact_sell (name, mobile, email, details) 
           VALUES('$name', '$mobile', '$email','$details')";
 
   if(mysqli_query($db, $query))
