@@ -14,7 +14,7 @@
 
 <?php
 
-$conn = mysqli_connect('127.0.0.1:54349','azure','6#vWHD_$','contact');
+$conn = mysqli_connect('127.0.0.1:49976','azure','6#vWHD_$','contact');
 
 
  $sql="SELECT * FROM contact_selling";
@@ -25,7 +25,7 @@ $conn = mysqli_connect('127.0.0.1:54349','azure','6#vWHD_$','contact');
 
 <?php
 
-$conn = mysqli_connect('127.0.0.1:54349','azure','6#vWHD_$','books');
+$conn = mysqli_connect('127.0.0.1:49976','azure','6#vWHD_$','books');
 
 
  $sql1="SELECT * FROM books_info";
@@ -69,7 +69,7 @@ $conn = mysqli_connect('127.0.0.1:54349','azure','6#vWHD_$','books');
       $order_id="";
       $status="";
 
-      $db = mysqli_connect('127.0.0.1:54349','azure','6#vWHD_$','books');
+      $db = mysqli_connect('127.0.0.1:49976','azure','6#vWHD_$','books');
 
       if (isset($_POST['updateorder'])) {
         // receive all input values from the form
@@ -143,7 +143,7 @@ $displaycount="";
 $insert="Inserted";
 
 
-$db = mysqli_connect('127.0.0.1:54349','azure','6#vWHD_$','books');
+$db = mysqli_connect('127.0.0.1:49976','azure','6#vWHD_$','books');
 
 
 if (isset($_POST['insertbook'])) {
@@ -251,7 +251,7 @@ mysqli_query($db, $sqltrig);
 
 <?php
 
-$db = mysqli_connect('127.0.0.1:54349','azure','6#vWHD_$','books');
+$db = mysqli_connect('127.0.0.1:49976','azure','6#vWHD_$','books');
 
 $resultcount="SELECT count(*) as total from books_info";
  $countstore=mysqli_query($db,$resultcount);
@@ -280,7 +280,7 @@ $pub_year ="";
 $owner_name ="";
 $update="Updated";
 
-$db1 = mysqli_connect('127.0.0.1:54349','azure','6#vWHD_$','books');
+$db1 = mysqli_connect('127.0.0.1:49976','azure','6#vWHD_$','books');
 
 
 $sqltrig=("CREATE TRIGGER actiontrig_books BEFORE UPDATE ON books_info FOR EACH ROW 
@@ -374,7 +374,7 @@ if(mysqli_query($db1, $sql01))
       $id="";
       $delete="Deleted";
 
-      $db = mysqli_connect('127.0.0.1:54349','azure','6#vWHD_$','books');
+      $db = mysqli_connect('127.0.0.1:49976','azure','6#vWHD_$','books');
 
       if (isset($_POST['deletebook'])) {
         // receive all input values from the form
@@ -434,7 +434,7 @@ mysqli_query($db, $sqltrig);
 <?php
        
 
-         $conn = mysqli_connect('127.0.0.1:54349','azure','6#vWHD_$','books');
+         $conn = mysqli_connect('127.0.0.1:49976','azure','6#vWHD_$','books');
 
 
          $sql="SELECT * FROM order_info NATURAL JOIN books_info";

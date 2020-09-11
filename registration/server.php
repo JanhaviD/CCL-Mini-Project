@@ -7,7 +7,7 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database
-$db = mysqli_connect('127.0.0.1:54349','azure','6#vWHD_$','reg');
+$db = mysqli_connect('127.0.0.1:49976','azure','6#vWHD_$','reg');
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {

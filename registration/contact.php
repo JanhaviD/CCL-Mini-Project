@@ -31,7 +31,7 @@ $email    = "";
 $details="";
 
 
-$db = mysqli_connect('127.0.0.1:54349','azure','6#vWHD_$','contact');
+$db = mysqli_connect('127.0.0.1:49976','azure','6#vWHD_$','contact');
 
 if (isset($_POST['submit_user'])) {
   // receive all input values from the form

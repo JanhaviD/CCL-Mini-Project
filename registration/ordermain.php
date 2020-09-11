@@ -30,7 +30,7 @@
          $recordsorder="";
         
 
-         $conn = mysqli_connect('127.0.0.1:54349','azure','6#vWHD_$','books');
+         $conn = mysqli_connect('127.0.0.1:49976','azure','6#vWHD_$','books');
 
          if (isset($_POST['view_orderid'])) {
  
@@ -61,7 +61,7 @@ $person_email ="";
 $quantity ="";
 $status="Pending";
 
-$db = mysqli_connect('127.0.0.1:54349','azure','6#vWHD_$','books');
+$db = mysqli_connect('127.0.0.1:49976','azure','6#vWHD_$','books');
 if (isset($_POST['confirm_order'])) {
  
   // receive all input values from the form
